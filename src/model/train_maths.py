@@ -139,7 +139,7 @@ def step_on_dataset(dataloader, model, criterion, optimizer,
         num_samples += num_samples_in_batch
         char_error_rate.update(current_outputs_str, current_targets_str)
         match_error_rate.update(current_outputs_str, current_targets_str)
-        epoch_loss += batch_loss.item() * batch_size
+        epoch_loss += batch_loss.item()
 
         if train:
             batch_loss.backward()
