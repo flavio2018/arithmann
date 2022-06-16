@@ -1,0 +1,5 @@
+name: lstm
+input_size: 36
+hidden_size: 100
+output_size: 36
+batch_first: true
