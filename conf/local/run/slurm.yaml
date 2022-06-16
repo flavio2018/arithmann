@@ -1,5 +1,0 @@
-loglevel: INFO
-project_path: "/home/petruzze/math-mann"
-codename: default_slurm
-seed: 2147483647
-wandb_mode: online
