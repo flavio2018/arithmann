@@ -1,27 +1,21 @@
 name: arithmann
-
 channels:
   - conda-forge
   - defaults
-
-requirements:
-	- hydra-core
-	- ipython
-	- ipykernel
-	- ipywidgets
-	- notebook
-	- torchtext==0.12
-	- torchmetrics
-	- wandb
+  - pytorch
+dependencies: 
+  - cudatoolkit=11.3  
+  - hydra-core
+  - ipython
+  - ipykernel
+  - ipywidgets
+  - notebook
+  - pytorch::pytorch
+  - pytorch::torchtext=0.12
+  - torchmetrics
+  - wandb
 
 # to use the A5000 nodes a specific pytorch build compliant with CUDA drivers of the GPU needs to be installed
-# --extra-index-url https://download.pytorch.org/whl/cu113
-# torch 
 
 # local package
 # -e .
-
-# python-dotenv>=0.5.1
-
-# setuptools==47.1.0
-

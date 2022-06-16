@@ -1,0 +1,12 @@
+[submodule "src/model/archies"]
+	path = src/model/archies
+	url = git@github.com:flavio2018/archies.git
+	branch = main
+[submodule "src/utils"]
+	path = src/utils
+	url = git@github.com:flavio2018/utils.git
+	branch = main
+[submodule "src/model/dntm"]
+	path = src/model/dntm
+	url = git@github.com:flavio2018/dntm.git
+	branch = main
