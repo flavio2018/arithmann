@@ -10,14 +10,15 @@ import torch
 from torchmetrics.classification import Accuracy
 from torchmetrics import CharErrorRate, MatchErrorRate
 
-from src.utils import configure_reproducibility
-from src.data.math_dm import get_dataloaders
-from src.models.train_dntm_utils import build_model
-from src.wandb_utils import log_weights_gradient
-from src.models.pytorchtools import EarlyStopping
+from utils.run_utils import configure_reproducibility
+from utils.wandb_utils import log_weights_gradient
+from utils.pytorchtools import EarlyStopping
+
+from data.math_dm import get_dataloaders
+from model.builders import build_model
 
 
-@hydra.main(config_path="../../conf", config_name="maths_local")
+@hydra.main(config_path="../../conf/local", config_name="train_maths")
 def click_wrapper(cfg):
     train_and_test_dntm_maths(cfg)
 
