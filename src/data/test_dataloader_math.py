@@ -1,11 +1,11 @@
 import hydra
 import omegaconf
 
-from src.utils import configure_reproducibility
-from src.data.math_dm import get_dataloaders
+from utils.run_utils import configure_reproducibility
+from data.math_dm import get_dataloaders
 
 
-@hydra.main("../../conf", "test_data_math")
+@hydra.main("../../conf/local", "test_data_math")
 def main(cfg):
 	rng = configure_reproducibility(cfg.run.seed)
 	cfg_dict = omegaconf.OmegaConf.to_container(cfg, resolve=True, throw_on_missing=True)
