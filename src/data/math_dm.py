@@ -5,7 +5,7 @@ import hydra
 import os
 import logging
 
-from src.data.BucketBatchSampler import BucketBatchSampler
+from utils.BucketBatchSampler import BucketBatchSampler
 from torch.utils.data import DataLoader
 from torchtext.vocab import build_vocab_from_iterator
 from torchtext.transforms import VocabTransform
