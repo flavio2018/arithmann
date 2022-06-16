@@ -1,5 +1,5 @@
 defaults:
-        - run: local
+        - run: slurm
         - data: maths
         - override hydra/hydra_logging: none
         - override hydra/job_logging: custom
