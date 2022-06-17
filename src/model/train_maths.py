@@ -104,7 +104,7 @@ def step_on_dataset(dataloader, model, criterion, optimizer,
 
         model.prepare_for_batch(one_hot_batch, device)
 
-        hidden_states, outputs = model(one_hot_batch)
+        hidden_states, outputs = model(one_hot_batch, masks_X)
         output = torch.stack([outputs[l-1,:,b] for l, b in zip(input_sequences_lengths, range(batch_size))]) 
         
         hidden_state = model.set_hidden_state(hidden_states, input_sequences_lengths, batch_size)
