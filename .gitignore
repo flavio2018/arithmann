@@ -1,7 +1,7 @@
 /data/
 /hydra/
 /models/checkpoints/
-slurm/
+/slurm/
 
 __pycache__/
 *.egg-info/
