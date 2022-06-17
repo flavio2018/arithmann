@@ -14,3 +14,7 @@
 	path = src/model/dntm_variant
 	url = git@github.com:flavio2018/dntm.git
 	branch = variant
+[submodule "src/model/masked_dntm"]
+	path = src/model/masked_dntm
+	url = git@github.com:flavio2018/dntm.git
+	branch = masked
